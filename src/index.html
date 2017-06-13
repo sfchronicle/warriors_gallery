@@ -22,13 +22,13 @@
     <div class="container">
 
       <div class="header">
-        <% var data = json.warrirors_2017_gallery %>
+        <% var data = json.warriors_2017_gallery %>
         <h1><%= data.Headline %></h1>
         <div class="date"><%= data.Date %></div>
         <div class="deck"><%= data.Deck %></div>
       </div>
 
-      <% json.warrirors_2017_gallery['images'].forEach(function(img) { %>
+      <% json.warriors_2017_gallery['images'].forEach(function(img) { %>
         <div class="img <%= img.Size %>">
           <img src="http://ww2.hdnux.com/photos/61/64/55/<%= img.Wcm_id %>/5/2000x0.jpg">
           <div class="caption"><%= img.Caption %> <span class="byline"> <%= img.Photographer %></span></div>
