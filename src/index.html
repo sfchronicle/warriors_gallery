@@ -26,7 +26,8 @@
         <h1><%= data.Headline %></h1>
         <div class="author">By <%= data.Photographers %></div>
         <div class="date"><%= data.Date %></div>
-        <div class="deck"><%= data.Deck %></div>
+        <% var deck_text = data.Deck.replace("**","<a href='http://www.sfchronicle.com/sports/warriors/' target='_blank'>").replace("*","</a>"); %>
+        <div class="deck"><%= deck_text %></div>
       </div>
 
       <% json.warriors_2017_gallery['images'].forEach(function(img) { %>
